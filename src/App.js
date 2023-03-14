@@ -1,9 +1,10 @@
 import './App.css';
+import { one } from './assets';
 
 function App() {
   return (
     <div className="app">
-    Altar
+   <img src={one} alt="" />
     </div>
   );
 }
