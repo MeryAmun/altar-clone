@@ -90,3 +90,108 @@ border: none;
 border-radius: 20px;
 font-weight: 700;
 }
+
+/* =================================MEDIA QUERIES=============================================================== */
+
+
+.navbar__links > .navbar__linksMenuIcon{
+    margin: 0 20px;
+    margin-top: -20px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar__linksSmall{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .navbar__linkSmall a{
+    
+    align-self: flex-start;
+    
+    
+    }
+    .navbar__linkSmall{
+    padding-bottom: 10px;
+    
+    }
+    .navbar__linkSmall::after{
+    margin-bottom: 10px;
+    content: '';
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: 3px;
+      width: 0px;
+      background: transparent;
+      transition: width 0.31s ease-in-out, background-color 0.31s ease-in-out;
+    
+    }
+ .navbar__linkBoxSmall:hover::after{
+    background: #FFFFFF;
+    width: 30px;
+} 
+ .navbar__linkBoxSmall a{
+    color: #FFFFFF;
+    font-size: 24px;
+} 
+    .navbar__linkSmall:hover::after{
+    width: 30px;
+      background: #FFFFFF;
+    }
+    .navbar__linkSmall a{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: Lato;
+    font-weight: 700;
+    text-decoration: none;
+    }
+    .navbar__linkIconSmall{
+        padding-top: 5px;
+    }
+    
+    .navbar__linkBookingSmall a{
+        background-color: transparent;
+        color: #0044FF;
+        }
+        .navbar__linkBookingSmall{
+        margin-top: 20px;
+        }
+        .navbar__linkBookingSmall button{
+        background-color: #FFFFFF;
+        padding: 20px 10x;
+        width: 111px;
+        height: 33px;
+        font-size: 14px;
+        font-family: Lato;
+        border: none;
+        border-radius: 20px;
+        font-weight: 700;
+        }
+
+        .navbar__linkMenuIconSmall{
+            color: #FFFFFF;
+            align-self: flex-end;
+        }
+
+        .navbar__navbarSmallSocial{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+        }
+.navbar__socialIcon{
+margin: 0 10px;
+color: #FFFFFF;
+cursor: pointer;
+}
+@media (max-width: 768px) {
+    .navbar__link{
+    display: none;
+    }
+    .navbar__links > .navbar__linksMenuIcon{
+        display: block;
+        }
+  }
