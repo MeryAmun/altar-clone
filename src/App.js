@@ -1,10 +1,11 @@
 import './App.css';
-import { one } from './assets';
+import { Navbar } from './components';
+
 
 function App() {
   return (
     <div className="app">
-   <img src={one} alt="" />
+  <Navbar/>
     </div>
   );
 }

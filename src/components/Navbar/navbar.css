@@ -1,0 +1,92 @@
+.navbar{
+    position: -webkit-sticky;
+  position: sticky;
+  /* sticky or fixed are fine */
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  padding: 20px;
+  height: 69px;
+  width: 100%;
+  background-color:#FFFFFF;
+  /*background: linear-gradient(to bottom, #000, #0003 70%,#0000);  background when scroll is in the top */
+  transition: background .5s; /* control how smooth the background changes */
+}
+
+.nav-colored { background-color:transparent; }
+/* .nav-transparent { background-color:transparent;} */
+
+.navbar__logo{
+    width: 102px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.navbar__links{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.navbar__link a{
+
+align-self: flex-start;
+
+
+}
+.navbar__link{
+margin: 0 20px;
+padding-bottom: 10px;
+
+}
+.navbar__link::after{
+margin-bottom: 10px;
+content: '';
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.31s ease-in-out, background-color 0.31s ease-in-out;
+
+}
+.navbar__link:hover::after{
+width: 30px;
+  background: #333333;
+}
+.navbar__link a{
+color: #333333;
+font-size: 16px;
+font-family: Lato;
+font-weight: 700;
+text-decoration: none;
+}
+
+/* .navbar__linkBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.navbar__linkIcon{
+    padding-top: 5px;
+}
+.navbar__linkBooking a{
+background-color: transparent;
+color: #FFFFFF;
+}
+.navbar__linkBooking{
+margin-top: -20px;
+}
+.navbar__linkBooking button{
+background-color: #0044FF;
+padding: 20px 10x;
+width: 111px;
+height: 33px;
+font-size: 11px;
+font-family: Lato;
+border: none;
+border-radius: 20px;
+font-weight: 700;
+}
