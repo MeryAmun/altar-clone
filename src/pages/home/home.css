@@ -1,10 +1,13 @@
 .home{
-    height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   
 }
 .home__hero{
-   
+  
 }
+
 .home__heroVideo{
     width: 100%;
     position: absolute;
@@ -45,3 +48,48 @@ font-weight: normal;
     border-radius: 30px;
     font-weight: 700;
     }
+
+
+
+    /* ================================SERVICES========================== */
+    .home__services{
+        margin-top: 25rem;
+        background-color: #F7F9FD;
+
+    }
+.home__servicesHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home__servicesHeaderTitle{
+font-size: 66px;
+color: #21212B;
+font-weight: 400;
+}
+.home__servicesHeaderText{
+margin: 0px 0px 8px;
+font-size: 28px;
+color: #0A0A0Aa6;
+}
+.home__serviceOptions{
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* ============================MEDIA QUERIES=================================================================== */
+
+
+@media (max-width: 768px) {
+    .serviceOptions{
+flex-direction: column;
+        }
+    
+  }

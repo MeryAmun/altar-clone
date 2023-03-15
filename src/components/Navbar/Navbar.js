@@ -1,15 +1,16 @@
 import React, {useState} from 'react';
 import { logo } from '../../assets';
 import { Link } from 'react-router-dom';
+import {HiOutlineMenuAlt2} from 'react-icons/hi'
+import {FaFacebookF, FaTwitter} from 'react-icons/fa'
+import {TiSocialLinkedin} from 'react-icons/ti'
+import {AiOutlineClose} from 'react-icons/ai'
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
-import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import FacebookIcon from '@mui/icons-material/Facebook';
+
 import CloseIcon from '@mui/icons-material/Close';
 import './navbar.css'
 import { NavSmall } from './styles';
-import Twitter from '@mui/icons-material/Twitter';
+
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -59,15 +60,16 @@ window.onscroll = function() {
                 <Link to='/start-a-project'>BOOK A CALL</Link>
                 </button>
             </div>
-             <MenuOutlinedIcon fontSize='large' className="navbar__linksMenuIcon" onClick={() => setOpen(true)}/>
+             <HiOutlineMenuAlt2  className="navbar__linksMenuIcon" onClick={() => setOpen(true)}/>
 
         </div>
 
         {/* ===================FOR SMALL SCREENS   ================================ */}
 
        <NavSmall show={open} onMouseLeave={() => setOpen(false)}>
-       {/* <MenuOutlinedIcon fontSize='large' className="navbar__linkMenuIconSmall"/> */}
-       <CloseIcon fontSize='large' className="navbar__linkMenuIconSmall" onClick={() => setOpen(false)}/>
+ 
+       <HiOutlineMenuAlt2 fontSize='large' className="navbar__linkMenuIconSmall" onClick={() => setOpen(false)}/>
+       {/* <AiOutlineClose fontSize='large' className="navbar__linkMenuIconSmall" onClick={() => setOpen(false)}/> */}
        <div className="navbar__linksSmall">
             <div className="navbar__linkSmall">
      <Link to='/work'>Work</Link>
@@ -99,9 +101,9 @@ window.onscroll = function() {
             </div>
             </div>
             <div className="navbar__navbarSmallSocial">
-<TwitterIcon className='navbar__socialIcon'/>
-<FacebookIcon className='navbar__socialIcon'/>
-<LinkedInIcon className='navbar__socialIcon'/>
+<FaTwitter className='navbar__socialIcon'/>
+<FaFacebookF className='navbar__socialIcon'/>
+<TiSocialLinkedin className='navbar__socialIcon'/>
             </div>
        </NavSmall>
     </div>

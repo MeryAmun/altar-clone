@@ -1,8 +1,7 @@
 .navbar{
-    position: -webkit-sticky;
-    position: sticky;
+   
     /* sticky or fixed are fine */
-    position: fixed;
+    
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,7 +14,10 @@
   transition: background .5s; /* control how smooth the background changes */
 }
 
-.scrolled { background-color:transparent; }
+.navbar.scrolled { 
+  background-color:transparent;
+  color: #FFFFFF;
+ }
 /* .nav-transparent { background-color:transparent;} */
 
 .navbar__logo{
@@ -28,6 +30,7 @@
 display: flex;
 justify-content: space-between;
 align-items: center;
+margin-top: 10px;
 }
 .navbar__link a{
 
@@ -97,6 +100,7 @@ font-weight: 700;
 .navbar__links > .navbar__linksMenuIcon{
     margin: 0 10px;
     margin-top: -20px;
+    font-size: 30px;
     cursor: pointer;
     display: none;
 }
@@ -174,6 +178,7 @@ font-weight: 700;
         .navbar__linkMenuIconSmall{
             color: #FFFFFF;
             align-self: flex-end;
+            cursor: pointer;
         }
 
         .navbar__navbarSmallSocial{
@@ -188,6 +193,9 @@ color: #FFFFFF;
 cursor: pointer;
 }
 @media (max-width: 768px) {
+  .navbar{
+    padding: 10px 20px;
+  }
     .navbar__link{
     display: none;
     }
