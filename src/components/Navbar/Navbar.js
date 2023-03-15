@@ -14,7 +14,7 @@ import Twitter from '@mui/icons-material/Twitter';
 const Navbar = () => {
     const [open, setOpen] = useState(false);
 
-    var navbar = document.querySelector('nav')
+    var navbar = document.querySelector('.navbar')
 
 window.onscroll = function() {
 
@@ -27,7 +27,7 @@ window.onscroll = function() {
 }
   return (
     <div className='navbar nav-colored'>
-        <Link to="http://localhost:3000/">
+        <Link to="/">
             <img src={logo} alt="" className='navbar__logo'/>
         </Link>
         <div className="navbar__links">
@@ -56,7 +56,7 @@ window.onscroll = function() {
             </div>
             <div className="navbar__linkBooking">
                 <button>
-                <Link to='/start-a-project'>Book A Call</Link>
+                <Link to='/start-a-project'>BOOK A CALL</Link>
                 </button>
             </div>
              <MenuOutlinedIcon fontSize='large' className="navbar__linksMenuIcon" onClick={() => setOpen(true)}/>
