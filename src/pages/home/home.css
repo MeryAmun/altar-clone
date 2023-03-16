@@ -173,6 +173,23 @@ button {
 /* ============================MEDIA QUERIES=================================================================== */
 
 
+@media (max-width: 500px) {
+  .home{
+    overflow-x: hidden;
+  }
+    .home__header {
+        margin: 20px  50px;
+    }
+    .serviceOptions {
+        flex-direction: column;
+    }
+    
+    .home__reviewMessage {
+        font-size: 18px;
+        padding: 0 30px;
+        text-align: center;
+    }
+}
 @media (max-width: 768px) {
     .home__hero {
         width: 100%;
@@ -195,7 +212,13 @@ button {
     .home__servicesHeaderTitle {
         font-size: 43px;
     }
-    
+    .home__reviewMessage {
+        width: 370px;
+        word-wrap: break-word;
+        text-align: left;
+        padding: 0 30px;
+        text-align: center;
+    }
     .home__servicesHeaderText {
         font-size: 20px;
         padding: 0 25px;
