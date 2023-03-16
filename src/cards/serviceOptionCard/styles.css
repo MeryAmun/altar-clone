@@ -11,7 +11,7 @@ box-shadow: 0 8px 10px 4px lightgray;
 background: #fff;
 border-radius: 0.5rem;
 margin: 10px;
-padding: 20px 40px;
+padding: 30px 60px;
 transition: box-shadow ease 0.30s;
 
 }
@@ -24,8 +24,8 @@ box-shadow: 0 8px 10px -8px lightgray;
 
 
 .serviceOption__icon{
-background-color: rgba(0, 195, 255,0.3);
-padding: 40px;
+background-color: rgba(92, 199, 231, 0.1);
+padding: 20px;
 /* width: 40px;
 height: 40px; */
 border-radius: 5px;

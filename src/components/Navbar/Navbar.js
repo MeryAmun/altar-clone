@@ -4,10 +4,8 @@ import { Link } from 'react-router-dom';
 import {HiOutlineMenuAlt2} from 'react-icons/hi'
 import {FaFacebookF, FaTwitter} from 'react-icons/fa'
 import {TiSocialLinkedin} from 'react-icons/ti'
-import {AiOutlineClose} from 'react-icons/ai'
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 
-import CloseIcon from '@mui/icons-material/Close';
 import './navbar.css'
 import { NavSmall } from './styles';
 
@@ -16,14 +14,17 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     var navbar = document.querySelector('.navbar')
+    var navbarLink = document.querySelector('.navbar__link')
 
 window.onscroll = function() {
 
   // pageYOffset or scrollY
-  if (window.pageYOffset > 0) {
-    navbar.classList.add('scrolled')
+  if (window.pageYOffset > 10) {
+    navbar.classList.add('scrolled');
+    navbarLink.classList.add('scrolled')
   } else {
     navbar.classList.remove('scrolled')
+    navbarLink.classList.remove('scrolled')
   }
 }
   return (
@@ -74,9 +75,9 @@ window.onscroll = function() {
             <div className="navbar__linkSmall">
      <Link to='/work'>Work</Link>
             </div>
-            <div className="navbar__link navbar__linkBoxSmall">
+            <div className="navbar__linkSmall navbar__linkBoxSmall">
      <Link to='/services'>Services</Link>
-     <KeyboardArrowDownOutlinedIcon fontSize='small' className='navbar__linkIconSmall'/>
+     <KeyboardArrowDownOutlinedIcon fontSize='large' className='navbar__linkIconSmall'/>
             </div>
             <div className="navbar__linkSmall">
      <Link to='/pricing'>Pricing</Link>
@@ -87,16 +88,16 @@ window.onscroll = function() {
             <div className="navbar__linkSmall">
      <Link to='/careers'>Careers</Link>
             </div>
-            <div className="navbar__link navbar__linkBoxSmall">
+            <div className="navbar__linkSmall navbar__linkBoxSmall">
      <Link to='/tech'>Tech</Link>
-     <KeyboardArrowDownOutlinedIcon fontSize='small' className='navbar__linkIconSmall'/>
+     <KeyboardArrowDownOutlinedIcon fontSize='large' className='navbar__linkIconSmall'/>
             </div>
             <div className="navbar__linkSmall">
      <Link to='/blog'>Blog</Link>
             </div>
             <div className="navbar__linkBookingSmall">
                 <button>
-                <Link to='/start-a-project'>Book A Call</Link>
+                <Link to='/start-a-project'>BOOK A CALL</Link>
                 </button>
             </div>
             </div>
