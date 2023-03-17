@@ -77,9 +77,15 @@ button {
 }
 
 .home__servicesHeaderText {
-    margin: 0px 0px 8px;
+    /* margin: 0px 0px 8px;
     font-size: 28px;
-    color: #0A0A0Aa6;
+    color: #0A0A0Aa6; */
+    color: #444;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 36px;
+    width: 50%;
+    height: 100%;
 }
 
 .home__serviceOptions {
@@ -325,9 +331,11 @@ text-transform: uppercase;
     align-self: flex-start;
 }
 .home__award{
-width: 260px;
+width: 180px;
 height: 212px;
-padding: 30px;
+object-fit: contain;
+margin: 20px;
+
 cursor: pointer;
 }
 

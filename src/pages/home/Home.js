@@ -48,8 +48,8 @@ const Home = () => {
           <div className="home__servicesHeader">
             <h2 className="home__servicesHeaderTitle">Services</h2>
             <p className="home__servicesHeaderText">
-              We can help you bring your product to life - <br /> whether it's a
-              Minimum Viable Product, UX/UI <br /> Services or help to scale
+              We can help you bring your product to life -  whether it's a
+              Minimum Viable Product, UX/UI  Services or help to scale
               your company.
             </p>
           </div>

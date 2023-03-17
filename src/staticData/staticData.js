@@ -5,7 +5,7 @@ import { AiFillApple } from 'react-icons/ai'
 import { FaRegHandshake } from 'react-icons/fa'
 import { SlDiamond } from 'react-icons/sl'
 import { HiOutlineUserGroup } from 'react-icons/hi'
-import { andre, claudio, daniel, logo1,logo2,logo3,logo4,logo5,logo6,logo7,logo9,logo11,logo16, one, two, three, four, five, six, seven, eight, nine, twelve, thirteen
+import { andre, claudio, daniel, logo1,logo2,logo3,logo4,logo5,logo6,logo7,logo9,logo11,logo12,logo13,logo14,logo15,logo10,logo8,logo16, one, three, four, five, six, seven, eight, nine, twelve, thirteen, ten, eleven
  } from '../assets';
 // logo12,logo13,logo14,logo15,logo10,logo8,
  
@@ -40,8 +40,40 @@ export const team = [
     },
 ]
 export const awards = [
-one,two,three,four,five,six,seven,eight,nine,twelve,thirteen
+    thirteen,one,three,five,twelve,four,eight,nine,ten,eleven, six,seven
 ]
 export const clients = [
-    logo1,logo2,logo3,logo4,logo5,logo6,logo7,logo9,logo11,logo16
+    logo1,logo2,logo3,logo4,logo5,logo6,logo7,logo9,logo11,logo12,logo13,logo14,logo15,logo10,logo8,logo16
 ]
+
+
+
+
+const footerLinks ={ 
+    global:[
+        {name:'Work',link:'/work'},
+        {name:'About Us',link:'/about'},
+        {name:'Blog',link:'/blog'},
+        {name:'Newsletter',link:'/newsletter'},
+        {name:'News',link:'/news'},
+        {name:'Careers',link:'/careers'},
+    ],
+    technology:[
+        {name:'Full Stack Apps',link:'/full-stack-apps'},
+        {name:'Artificial Intelligence',link:'/a1'},
+        {name:'Data Intensive Apps',link:'/data-intensive-apps'},
+        {name:'Open Source',link:'/open-source'},
+    ],
+    services:[
+        {name:'Product Scope',link:'/product-scope'},
+        {name:'UI/UX',link:'/ui-ux'},
+        {name:'MVP Builder',link:'/mvp-builder'},
+        {name:'Dedicated Teams',link:'/teams'},
+    ],
+    build:[
+        {name:'Play With Pricing',link:'/play-with-pricing'},
+        {name:'Book A Call',link:'/start-a-project'},
+        {name:'MVP Builder',link:'/mvp-builder'},
+        {name:'Dedicated Teams',link:'/teams'},
+    ],
+}
