@@ -54,7 +54,7 @@ button {
 
 
 
-/* ================================SERVICES========================== */
+/* =============================================SERVICES====================================================================*/
 .home__services {
     padding-top: 5rem;
     background-color: #F7F9FD;
@@ -91,7 +91,7 @@ button {
 }
 
 
-/* ==========================================review================================================================= */
+/* ==========================================REVIEW================================================================= */
 .home__review {
     display: flex;
     justify-content: space-evenly;
@@ -175,7 +175,10 @@ justify-content: space-between;
 align-items: center;
 }
 .home__casesHeader{
-    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .home__casesTitle{
     color: #21212B;
@@ -184,38 +187,35 @@ align-items: center;
     margin: 0px 0px 8px;
 }
 .home__casesText{
-    color: #0A0A0AA6;
-    font-size: 30px;
-    font-family: Lato;
-    margin: 0px 0px 8px;
-    width: 616px;
-    height: 117px;
+    color: #444;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 36px;
+    width: 50%;
+    height: 100%;
 }
 .home__casesBody{
-    width: 85%;
-    height: 100vh;
+    padding: 20px;
+    width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* .home__casesImage > img{
-    border: 1px solid rgb(204, 52, 14);
-} */
-.home__casesImages{
-  position: relative; 
-  left: 0; 
-  margin-right: 5rem;
-}
 .home__casesBodyRight{
-    margin-left: 5rem;
-    padding: 0px 20px;
+    padding: 0 30px ;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 100%;
+    margin: 0 3rem;
+    width: 600px;
     height: 350px;
+    align-self: flex-end;
+}
+.home__caseStudyImg{
+    width: 400px;
+    border-radius: 10px;
 }
 .home__casesBodyRight ,h6 ,h3{
     margin-bottom: 20px;
@@ -255,12 +255,10 @@ color: #0044FF;
 
 /* ======================================TEAM====================================================== */
 .home__team{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 4rem;
-    border: 2px solid yellowgreen;
 }
 .home__teamMember{
 display: flex;
@@ -285,6 +283,7 @@ box-shadow: 0 8px 10px 4px lightgray;
 width: 258px;
 height: 328px;
 padding: 20px;
+border-top: none;
 
 }
 .home__teamMemberTitle{
@@ -331,6 +330,15 @@ height: 212px;
 padding: 30px;
 cursor: pointer;
 }
+
+
+/* ===================================OPEN SOURCE=========================================== */
+
+
+
+/* =====================================CLIENTS==================================================== */
+
+
 /* ============================MEDIA QUERIES=================================================================== */
 
 
@@ -352,35 +360,47 @@ cursor: pointer;
         padding: 0 30px;
         text-align: center;
     }
+    .home__casesText{
+        width: 100%;
+    }
     .home__casesTitle{
         width: 100%;
-        border: 1px solid red;
         font-size: 28px;
         text-align: center;
         margin-bottom: 1rem;
     }
     .home__casesHeader{
-        width: 100%;
-        border: 1px solid red;
         font-size: 28px;
         text-align: center;
         
     }
-    .home__cases
+    
     .home__casesBody{
         flex-direction: column;
-        height: 100%; 
+        justify-content: center;
+        margin: 0px;
     }
+  
     .home__casesBodyRight{
-        margin-bottom: 5rem;
         height: 100%;
+        margin: 10px 0px;
+        padding: 10px;
+         width: 100%;
+    }
+    .home__caseStudyImg{
+        margin: 10px;
+        width: 200px;
+
     }
     .home__team{
         flex-direction: column;
+        padding-bottom: 10px;
     }
     .home__teamMember{
         margin-top:30px;
+        margin-left: 20px;
     }
+    
 }
 
 @media (max-width: 768px) {
@@ -434,7 +454,7 @@ cursor: pointer;
     }
 
     .home__reviewMessage {
-        padding: 15px;
+        padding: 10px;
     }
 
     .home__reviewText {
@@ -456,10 +476,20 @@ cursor: pointer;
     .home__casesBody{
         flex-direction: column; 
     }
+    .home__casesText{
+        width: 100%;
+    }
+    .home__casesBodyRight{
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
     .home__team{
         flex-direction: column;
+        padding-bottom: 20px;
     }
     .home__teamMember{
         margin-top:30px;
+        margin-left: 10px;
     }
 }

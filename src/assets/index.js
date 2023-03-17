@@ -28,6 +28,7 @@ export {default as logo7 } from './images/logo7.svg';
 export {default as logo9 } from './images/logo9.svg';
 // export {default as logo10 } from './images/logo10.svg';
 export {default as logo11 } from './images/logo11.svg';
+export { default as logoNew } from './images/logoNew.png'
 // export {default as logo12 } from './images/logo12.svg';
 // export {default as logo13 } from './images/logo13.svg';
 // export {default as logo14 } from './images/logo14.svg';

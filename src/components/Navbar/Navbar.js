@@ -13,16 +13,16 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   var navbar = document.querySelector(".navbar");
-  var navbarLink = document.querySelector(".navbar__link");
+//   var navbarLink = document.querySelector(".navbar__link");
 
   window.onscroll = function () {
     // pageYOffset or scrollY
     if (window.pageYOffset > 10) {
       navbar.classList.add("scrolled");
-      navbarLink.classList.add("scrolled");
+//       navbarLink.classList.add("scrolled");
     } else {
       navbar.classList.remove("scrolled");
-      navbarLink.classList.remove("scrolled");
+//       navbarLink.classList.remove("scrolled");
     }
   };
   return (

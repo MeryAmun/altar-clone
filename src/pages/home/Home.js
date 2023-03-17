@@ -103,17 +103,16 @@ const Home = () => {
             <h2 className="home__casesTitle">Case Studies</h2>
           </Reveal>
           <Slide bottom>
-            <p className="home__casesText">
+            <h3 className="home__casesText">
               We are proud to work with truly innovative clients. Here are just
-              a few of the companies we’ve had the privilege to work with.
-            </p>
+              a few of the companies
+               we’ve had the privilege to work with.
+            </h3>
           </Slide>
         </div>
         <div className="home__casesBody">
-          <div className="home__casesImages">
-            <ImageComponent />
-            {/* <img src="https://cdn-bpphg.nitrocdn.com/WvJxwYJgWNVdwgfGCwfpdhJOrQEaryEr/assets/images/optimized/rev-e3576ea/altar.io-neo/wp-content/uploads/2021/06/20220633/reic-tilt-4.png" alt="" /> */}
-          </div>
+            {/* <ImageComponent /> */}
+            <img src="https://images.pexels.com/photos/2603464/pexels-photo-2603464.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className="home__caseStudyImg" />
           <div className="home__casesBodyRight">
             <h6>
               <strong>FINTECH</strong>
@@ -133,12 +132,7 @@ const Home = () => {
             </button>
           </div>
         </div>
-      </div>
-      <div className="home__casesBody">
-        <div className="home__casesImages">
-          <ImageComponent />
-          {/* <img src="https://cdn-bpphg.nitrocdn.com/WvJxwYJgWNVdwgfGCwfpdhJOrQEaryEr/assets/images/optimized/rev-e3576ea/altar.io-neo/wp-content/uploads/2021/06/20220633/reic-tilt-4.png" alt="" /> */}
-        </div>
+        <div className="home__casesBody">
         <div className="home__casesBodyRight">
           <h6>
             <strong>MUSICTECH</strong>
@@ -156,7 +150,11 @@ const Home = () => {
             <Link to="/case-study">SEE CASES STUDY</Link>
           </button>
         </div>
+          {/* <ImageComponent /> */}
+          <img src="https://images.pexels.com/photos/2603464/pexels-photo-2603464.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className="home__caseStudyImg" />
       </div>
+      </div>
+      
       <div className="home__team">
         {team?.map(({ image, title, text, link }, index) => (
           <div className="home__teamMember" key={index}>
@@ -196,10 +194,11 @@ const Home = () => {
       </div>
       <div className="home__services">
         <Slide bottom>
-          <div className="home__servicesHeader">
+          <div className="home__casesHeader">
             <h2 className="home__servicesHeaderTitle">Open Source</h2>
-            <p className="home__servicesHeaderText">
-            We don’t just serve the industry - We’re part of the industry and build technology that is used worldwide.
+            <p className="home__casesText">
+            We don’t just serve the industry - We’re part of  the industry and build technology that is used 
+            worldwide.
             </p>
           </div>
         </Slide>
@@ -221,12 +220,12 @@ const Home = () => {
         </Slide>
         <div className="home__awards">
           {clients?.map((client, index) => (
-            <Zoom bottom>
+            <Zoom bottom key={index}>
               <img
                 src={client}
                 alt={client}
                 className="home__award"
-                key={index}
+                
               />
             </Zoom>
           ))}
