@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { hero, review, reviewLogo } from "../../assets";
-
 import { FaQuoteLeft } from "react-icons/fa";
 import { Slide, Zoom, Reveal } from "react-reveal";
 import "./home.css";
@@ -9,6 +8,7 @@ import { awards, clients, serviceOptions, team } from "../../staticData/staticDa
 import { ServiceOptionCard } from "../../cards";
 import { AiFillPlayCircle } from "react-icons/ai";
 import ImageComponent from "../../components/imageComponent/ImageComponent";
+import { OpenSource } from "../../components";
 
 const Home = () => {
   const [playing, setPlaying] = useState(false);
@@ -192,23 +192,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div className="home__services">
-        <Slide bottom>
-          <div className="home__casesHeader">
-            <h2 className="home__servicesHeaderTitle">Open Source</h2>
-            <p className="home__casesText">
-            We don’t just serve the industry - We’re part of  the industry and build technology that is used 
-            worldwide.
-            </p>
-          </div>
-        </Slide>
-        <div className="home__openSource">
-          
-        </div>
-        <button className="home__casesBodyRightBtn">
-              <Link to="/case-study">SEE ALL OPEN SOURCE</Link>
-            </button>
-      </div>
+     <OpenSource/>
       <div className="home__services">
         <Slide bottom>
           <div className="home__servicesHeader">

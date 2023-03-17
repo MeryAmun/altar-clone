@@ -77,3 +77,13 @@ const footerLinks ={
         {name:'Dedicated Teams',link:'/teams'},
     ],
 }
+
+const openSourceData = [
+    {
+       
+
+    },
+    {
+
+    }
+]

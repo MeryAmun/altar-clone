@@ -38,4 +38,8 @@ export {default as logo13 } from './images/logo13.png';
 export {default as logo16 } from './images/logo16.svg';
 export {default as review } from './videos/review.mp4'
 export { default as reviewLogo } from './images/review.svg';
-export { default as cases } from './images/cases.webp'
+export { default as cases } from './images/cases.webp';
+export { default as loopBack } from './images/strongloop.jpg'
+export { default as angulartics } from './images/angular.jpg'
+export { default as builder } from './images/builder.jpg'
+export { default as starter } from './images/starter.jpg'
