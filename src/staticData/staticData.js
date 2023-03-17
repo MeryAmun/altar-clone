@@ -25,18 +25,18 @@ export const serviceOptions = [
     },
 ]
 
-export const people = [
+export const team = [
     {
         image:andre, title:'Need a Team?', text:'Need a dynamic team? Then you should talk to me. I’d be glad to discuss your needs with you & help you build a team of top talent to help your business reach its potential.',
-        button:'Email Andre'
+        link:'Email Andre'
     },
     {
         image:daniel, title:'Building an MVP?', text:'Looking to build fast and reduce your time to market? Drop me a message. Together we can find the core set of features to gather user information and iteratively create the best possible product.',
-        button:'Email Daniel'
+        link:'Email Daniel'
     },
     {
         image:claudio, title:'Talk Tech?', text:'If you want to have a jargon-free tech conversation with someone who speaks your language then drop me a message. I can help you find the right technical requirements for your product.',
-        button:'Email Claudio'
+        link:'Email Claudio'
     },
 ]
 export const awards = [

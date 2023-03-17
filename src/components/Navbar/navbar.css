@@ -42,7 +42,6 @@
 }
 
 .navbar__link a {
-
   align-self: flex-start;
 
 
@@ -127,68 +126,69 @@
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
+  margin-top: -2rem;
 }
 
 .navbar__linkSmall {
   width: 100%;
-  margin: 0px;
-  padding: 0px;
-}
-
-.navbar__linkSmall a {
-  align-self: flex-start;
-
+  margin:  5px 0 5px;
 
 }
 
-.navbar__linkBoxSmall {
-  width: 300px;
-}
+
 .navbar__linkIconSmall {
-  padding-top: 5px;
-  color: #FFFFFF;
+  color: #EEFBFA;
   margin-left: 8rem;
-}
-
-.navbar__linkSmall {
-  padding-bottom: 10px;
-
+ 
 }
 
 .navbar__linkSmall::after {
-  margin-bottom: 10px;
   content: '';
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 3px;
+  height: 5px;
   width: 0px;
   background: transparent;
   transition: width 0.31s ease-in-out, background-color 0.31s ease-in-out;
 
 }
 
-.navbar__linkBoxSmall:hover::after {
+/* .navbar__linkBoxSmall:hover::after {
   background: #FFFFFF;
   width: 30px;
-}
+} */
 
-.navbar__linkBoxSmall a {
+/* .navbar__linkBoxSmall a {
   color: #FFFFFF;
   font-size: 24px;
-}
+  align-self: flex-start;
+} */
 
 .navbar__linkSmall:hover::after {
-  width: 30px;
+  width: 50px;
+  height: 5px;
   background: #FFFFFF;
 }
 
 .navbar__linkSmall a {
-  color: #FFFFFF;
+  color: #EEFBFA;
+  margin: 0px 20px 0px 0px;
   font-size: 24px;
   font-family: Lato;
   font-weight: 700;
   text-decoration: none;
+}
+
+.navbar__linkBoxSmall{
+  padding: 0px;
+  /* border: 1px solid rgb(20, 19, 20); */
+
+}
+.navbar__linkBoxSmall > a{
+  margin-top: 0px;
+  /* border: 1px solid red; */
+
 }
 
 .navbar__linkBookingSmall a {
@@ -215,21 +215,23 @@
 }
 
 .navbar__linkMenuIconSmall {
-  color: #FFFFFF;
+  color: #EEFBFA;
   align-self: flex-end;
+  font-size: 35px;
   cursor: pointer;
 }
 
 .navbar__navbarSmallSocial {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: flex-start;
 }
 
 .navbar__socialIcon {
   margin: 0 10px;
   color: #FFFFFF;
+  font-size: 30px;
   cursor: pointer;
 }
 
@@ -242,7 +244,7 @@
     display: none;
   }
 
-  .navbar__links>.navbar__linksMenuIcon {
+  .navbar__links >.navbar__linksMenuIcon {
     display: block;
   }
 

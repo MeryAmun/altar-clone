@@ -34,4 +34,5 @@ export {default as logo11 } from './images/logo11.svg';
 // export {default as logo15 } from './images/logo15.svg';
 export {default as logo16 } from './images/logo16.svg';
 export {default as review } from './videos/review.mp4'
-export { default as reviewLogo } from './images/review.svg'
+export { default as reviewLogo } from './images/review.svg';
+export { default as cases } from './images/cases.webp'

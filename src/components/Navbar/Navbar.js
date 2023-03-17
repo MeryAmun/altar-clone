@@ -75,7 +75,6 @@ const Navbar = () => {
 
       <NavSmall show={open} onMouseLeave={() => setOpen(false)}>
         <HiOutlineMenuAlt2
-          fontSize="large"
           className="navbar__linkMenuIconSmall"
           onClick={() => setOpen(false)}
         />
