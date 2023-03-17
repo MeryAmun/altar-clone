@@ -7,7 +7,6 @@ import "./home.css";
 import { awards, clients, serviceOptions, team } from "../../staticData/staticData";
 import { ServiceOptionCard } from "../../cards";
 import { AiFillPlayCircle } from "react-icons/ai";
-import ImageComponent from "../../components/imageComponent/ImageComponent";
 import { OpenSource } from "../../components";
 
 const Home = () => {

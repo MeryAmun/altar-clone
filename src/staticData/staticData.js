@@ -49,36 +49,36 @@ export const clients = [
 
 
 
-const footerLinks ={ 
-    global:[
-        {name:'Work',link:'/work'},
-        {name:'About Us',link:'/about'},
-        {name:'Blog',link:'/blog'},
-        {name:'Newsletter',link:'/newsletter'},
-        {name:'News',link:'/news'},
-        {name:'Careers',link:'/careers'},
-    ],
-    technology:[
-        {name:'Full Stack Apps',link:'/full-stack-apps'},
-        {name:'Artificial Intelligence',link:'/a1'},
-        {name:'Data Intensive Apps',link:'/data-intensive-apps'},
-        {name:'Open Source',link:'/open-source'},
-    ],
-    services:[
-        {name:'Product Scope',link:'/product-scope'},
-        {name:'UI/UX',link:'/ui-ux'},
-        {name:'MVP Builder',link:'/mvp-builder'},
-        {name:'Dedicated Teams',link:'/teams'},
-    ],
-    build:[
-        {name:'Play With Pricing',link:'/play-with-pricing'},
-        {name:'Book A Call',link:'/start-a-project'},
-        {name:'MVP Builder',link:'/mvp-builder'},
-        {name:'Dedicated Teams',link:'/teams'},
-    ],
-}
+// const footerLinks ={ 
+//     global:[
+//         {name:'Work',link:'/work'},
+//         {name:'About Us',link:'/about'},
+//         {name:'Blog',link:'/blog'},
+//         {name:'Newsletter',link:'/newsletter'},
+//         {name:'News',link:'/news'},
+//         {name:'Careers',link:'/careers'},
+//     ],
+//     technology:[
+//         {name:'Full Stack Apps',link:'/full-stack-apps'},
+//         {name:'Artificial Intelligence',link:'/a1'},
+//         {name:'Data Intensive Apps',link:'/data-intensive-apps'},
+//         {name:'Open Source',link:'/open-source'},
+//     ],
+//     services:[
+//         {name:'Product Scope',link:'/product-scope'},
+//         {name:'UI/UX',link:'/ui-ux'},
+//         {name:'MVP Builder',link:'/mvp-builder'},
+//         {name:'Dedicated Teams',link:'/teams'},
+//     ],
+//     build:[
+//         {name:'Play With Pricing',link:'/play-with-pricing'},
+//         {name:'Book A Call',link:'/start-a-project'},
+//         {name:'MVP Builder',link:'/mvp-builder'},
+//         {name:'Dedicated Teams',link:'/teams'},
+//     ],
+// }
 
-const openSourceData = [
+export const openSourceData = [
     {
        
 
