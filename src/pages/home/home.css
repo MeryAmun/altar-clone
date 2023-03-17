@@ -259,7 +259,8 @@ color: #0044FF;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    border: 2px solid yellowgreen;
 }
 .home__teamMember{
 display: flex;
@@ -311,6 +312,25 @@ font-size: 12px;
 font-family: Lato;
 text-transform: uppercase;
 }
+
+/* ==================================AWARDS============================================================= */
+.home__awards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+.home__awards:last-child{
+    align-self: flex-start;
+}
+.home__award{
+width: 260px;
+height: 212px;
+padding: 30px;
+cursor: pointer;
+}
 /* ============================MEDIA QUERIES=================================================================== */
 
 
@@ -357,6 +377,9 @@ text-transform: uppercase;
     }
     .home__team{
         flex-direction: column;
+    }
+    .home__teamMember{
+        margin-top:30px;
     }
 }
 
@@ -435,5 +458,8 @@ text-transform: uppercase;
     }
     .home__team{
         flex-direction: column;
+    }
+    .home__teamMember{
+        margin-top:30px;
     }
 }

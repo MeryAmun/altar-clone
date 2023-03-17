@@ -1,11 +1,11 @@
 import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import {  hero, review, reviewLogo } from "../../assets";
-import Reveal from 'react-reveal/Reveal';
+import { hero, review, reviewLogo } from "../../assets";
+
 import { FaQuoteLeft } from "react-icons/fa";
-import Slide from "react-reveal/Slide";
+import { Slide, Zoom, Reveal } from "react-reveal";
 import "./home.css";
-import { serviceOptions, team } from "../../staticData/staticData";
+import { awards, clients, serviceOptions, team } from "../../staticData/staticData";
 import { ServiceOptionCard } from "../../cards";
 import { AiFillPlayCircle } from "react-icons/ai";
 import ImageComponent from "../../components/imageComponent/ImageComponent";
@@ -92,71 +92,146 @@ const Home = () => {
               Philip Schoch - Apiax, Co-Founder
             </span>
             <Reveal effect="fadeInUp">
-            <img src={reviewLogo} alt="" className="home__reviewClient" />
+              <img src={reviewLogo} alt="" className="home__reviewClient" />
             </Reveal>
           </div>
         </Slide>
       </div>
       <div className="home__cases">
         <div className="home__casesHeader">
-        <Reveal effect="fadeInUp">
-          <h2 className="home__casesTitle">Case Studies</h2>
+          <Reveal effect="fadeInUp">
+            <h2 className="home__casesTitle">Case Studies</h2>
           </Reveal>
           <Slide bottom>
-          <p className="home__casesText">
-          We are proud to work with truly innovative clients. Here are just a few of the companies we’ve had the privilege to work with.
-          </p>
+            <p className="home__casesText">
+              We are proud to work with truly innovative clients. Here are just
+              a few of the companies we’ve had the privilege to work with.
+            </p>
           </Slide>
         </div>
         <div className="home__casesBody">
           <div className="home__casesImages">
-           <ImageComponent/>
+            <ImageComponent />
             {/* <img src="https://cdn-bpphg.nitrocdn.com/WvJxwYJgWNVdwgfGCwfpdhJOrQEaryEr/assets/images/optimized/rev-e3576ea/altar.io-neo/wp-content/uploads/2021/06/20220633/reic-tilt-4.png" alt="" /> */}
           </div>
           <div className="home__casesBodyRight">
-            <h6><strong>FINTECH</strong></h6>
-            <h3><strong>REIC</strong></h3>
-           <p className="home__casesBodyRightText">
-           REIC (Real Estate Intelligence Cloud), developed in collaboration with AlixPartners, aims to assess the fair forward-looking value of real estate developments and the fair credit value of real estate developers – and to suggest underwriting overrides when lending to these counterparts.
-           </p>
-           <button className="home__casesBodyRightBtn">
+            <h6>
+              <strong>FINTECH</strong>
+            </h6>
+            <h3>
+              <strong>REIC</strong>
+            </h3>
+            <p className="home__casesBodyRightText">
+              REIC (Real Estate Intelligence Cloud), developed in collaboration
+              with AlixPartners, aims to assess the fair forward-looking value
+              of real estate developments and the fair credit value of real
+              estate developers – and to suggest underwriting overrides when
+              lending to these counterparts.
+            </p>
+            <button className="home__casesBodyRightBtn">
               <Link to="/case-study">SEE CASES STUDY</Link>
             </button>
           </div>
         </div>
       </div>
       <div className="home__casesBody">
-          <div className="home__casesImages">
-           <ImageComponent/>
-            {/* <img src="https://cdn-bpphg.nitrocdn.com/WvJxwYJgWNVdwgfGCwfpdhJOrQEaryEr/assets/images/optimized/rev-e3576ea/altar.io-neo/wp-content/uploads/2021/06/20220633/reic-tilt-4.png" alt="" /> */}
-          </div>
-      <div className="home__casesBodyRight">
-            <h6><strong>MUSICTECH</strong></h6>
-            <h3><strong>Audio Test Kitchen</strong></h3>
-           <p className="home__casesBodyRightText">
-           ATK is the world’s first platform to compare professional audio gear in a fully immersive, interactive and unbiased way. With Audio Test Kitchen, audio engineers and record producers can skip the hype and directly compare the sound of different audio gear.
-           </p>
-           <button className="home__casesBodyRightBtn">
-              <Link to="/case-study">SEE CASES STUDY</Link>
-            </button>
-          </div>
-          </div>
-          <div className="home__team">
-            {
-              team?.map(({image, title,text,link},index) => (
-                <div className="home__teamMember" key={index}>
-              <img src={image} alt="" className="home__teamMemberImg" />
-              <div className="home__teamMemberDetails">
+        <div className="home__casesImages">
+          <ImageComponent />
+          {/* <img src="https://cdn-bpphg.nitrocdn.com/WvJxwYJgWNVdwgfGCwfpdhJOrQEaryEr/assets/images/optimized/rev-e3576ea/altar.io-neo/wp-content/uploads/2021/06/20220633/reic-tilt-4.png" alt="" /> */}
+        </div>
+        <div className="home__casesBodyRight">
+          <h6>
+            <strong>MUSICTECH</strong>
+          </h6>
+          <h3>
+            <strong>Audio Test Kitchen</strong>
+          </h3>
+          <p className="home__casesBodyRightText">
+            ATK is the world’s first platform to compare professional audio gear
+            in a fully immersive, interactive and unbiased way. With Audio Test
+            Kitchen, audio engineers and record producers can skip the hype and
+            directly compare the sound of different audio gear.
+          </p>
+          <button className="home__casesBodyRightBtn">
+            <Link to="/case-study">SEE CASES STUDY</Link>
+          </button>
+        </div>
+      </div>
+      <div className="home__team">
+        {team?.map(({ image, title, text, link }, index) => (
+          <div className="home__teamMember" key={index}>
+            <img src={image} alt="" className="home__teamMemberImg" />
+            <div className="home__teamMemberDetails">
               <h5 className="home__teamMemberTitle">{title}</h5>
               <p className="home__teamMemberText">{text}</p>
               <button className="home__teamMemberBtn">
-              <Link to="/case-study">{link}</Link>
-            </button>
-              </div>
+                <Link to="/case-study">{link}</Link>
+              </button>
             </div>
-              ))
-            }
           </div>
+        ))}
+      </div>
+      <div className="home__services">
+        <Slide bottom>
+          <div className="home__servicesHeader">
+            <h2 className="home__servicesHeaderTitle">Awards</h2>
+            <p className="home__servicesHeaderText">
+              We are voted a Top Firm by Entrepreneurs and Business Leaders just
+              like you.
+            </p>
+          </div>
+        </Slide>
+        <div className="home__awards">
+          {awards?.map((award, index) => (
+            <Zoom bottom>
+              <img
+                src={award}
+                alt={award}
+                className="home__award"
+                key={index}
+              />
+            </Zoom>
+          ))}
+        </div>
+      </div>
+      <div className="home__services">
+        <Slide bottom>
+          <div className="home__servicesHeader">
+            <h2 className="home__servicesHeaderTitle">Open Source</h2>
+            <p className="home__servicesHeaderText">
+            We don’t just serve the industry - We’re part of the industry and build technology that is used worldwide.
+            </p>
+          </div>
+        </Slide>
+        <div className="home__openSource">
+          
+        </div>
+        <button className="home__casesBodyRightBtn">
+              <Link to="/case-study">SEE ALL OPEN SOURCE</Link>
+            </button>
+      </div>
+      <div className="home__services">
+        <Slide bottom>
+          <div className="home__servicesHeader">
+            <h2 className="home__servicesHeaderTitle">Clients</h2>
+            <p className="home__servicesHeaderText">
+            Great Companies make us grow every day.
+            </p>
+          </div>
+        </Slide>
+        <div className="home__awards">
+          {clients?.map((client, index) => (
+            <Zoom bottom>
+              <img
+                src={client}
+                alt={client}
+                className="home__award"
+                key={index}
+              />
+            </Zoom>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
