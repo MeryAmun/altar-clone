@@ -86,6 +86,7 @@ button {
     line-height: 36px;
     width: 50%;
     height: 100%;
+    text-align: center;
 }
 
 .home__serviceOptions {

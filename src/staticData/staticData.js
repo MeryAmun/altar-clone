@@ -78,12 +78,31 @@ export const clients = [
 //     ],
 // }
 
-export const openSourceData = [
+export const newsData = [
     {
-       
+       title:'Altar Named Leading Global Company in Manifest 2022 Awards',text:'We are thrilled to share that we have been recognized as a global industry leader by The Manifest in their 2022 awards. We are grateful to be recognized among such a talented group of companies. We look forward to continuing to provide top-quality products and services to our customers in the coming year.'
 
     },
     {
+       title:'Altar Named Top B2B Company by Manifest',text:'We are thrilled to share that we have been recognized as a global industry leader by The Manifest in their 2022 awards. We are grateful to be recognized among such a talented group of companies. We look forward to continuing to provide top-quality products and services to our customers in the coming year.'
 
-    }
+    },
+    {
+       title:'Altar CO-Founder & CEO interviewed by Forbes',text:'We are thrilled to share that we have been recognized as a global industry leader by The Manifest in their 2022 awards. We are grateful to be recognized among such a talented group of companies. We look forward to continuing to provide top-quality products and services to our customers in the coming year.'
+
+    },
+    {
+       title:'Fast Company Recognizes Altar Client in 2022  Awards',text:'We are thrilled to share that we have been recognized as a global industry leader by The Manifest in their 2022 awards. We are grateful to be recognized among such a talented group of companies. We look forward to continuing to provide top-quality products and services to our customers in the coming year.'
+
+    },
+    {
+       title:'Altar NamedTop 1000 Company by Clutch',text:'We are thrilled to share that we have been recognized as a global industry leader by The Manifest in their 2022 awards. We are grateful to be recognized among such a talented group of companies. We look forward to continuing to provide top-quality products and services to our customers in the coming year.'
+
+    },
+    {
+       title:'Altar CO-Founder & CEO interviewed by Business Magazine',text:'We are thrilled to share that we have been recognized as a global industry leader by The Manifest in their 2022 awards. We are grateful to be recognized among such a talented group of companies. We look forward to continuing to provide top-quality products and services to our customers in the coming year.'
+
+    },
+    
+   
 ]

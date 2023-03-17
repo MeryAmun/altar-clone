@@ -7,7 +7,7 @@ import "./home.css";
 import { awards, clients, serviceOptions, team } from "../../staticData/staticData";
 import { ServiceOptionCard } from "../../cards";
 import { AiFillPlayCircle } from "react-icons/ai";
-import { OpenSource } from "../../components";
+import { News, OpenSource } from "../../components";
 
 const Home = () => {
   const [playing, setPlaying] = useState(false);
@@ -214,6 +214,7 @@ const Home = () => {
           ))}
         </div>
       </div>
+      <News/>
     </div>
   );
 };
