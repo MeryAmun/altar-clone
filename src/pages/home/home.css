@@ -245,7 +245,7 @@ align-items: center;
 .home__casesBodyRightBtn{
     background-color: #F7F9FD;
     margin: 0px 0px 10px;
-color: #0044FF;
+
     padding: 6px 19x;
     width: 125px;
     height: 36px;
@@ -258,6 +258,7 @@ color: #0044FF;
     font-size: 12px;
     font-family: Lato;
     text-decoration: none;
+    color: #0044FF;
 }
 
 /* ======================================TEAM====================================================== */

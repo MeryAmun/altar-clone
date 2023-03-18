@@ -36,7 +36,7 @@ margin: 0px 0px 10px;
 padding: 12px 18px;
 background-color: #0044FF;
 }
-.footer__levelOneLeftBtn a{
+.footer__levelOneLeftBtn > a{
     font-size: 12px;
     font-family: Lato;
     color: #FFFFFF;
