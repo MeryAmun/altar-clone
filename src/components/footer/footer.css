@@ -99,7 +99,7 @@ justify-content: space-between;
     justify-content: space-evenly;
     align-items: center;
 background-color: #252525;
-height: 586px;
+height: 100%;
 }
 .footer__linksGroup{
     margin: 0px 0px 20px;
