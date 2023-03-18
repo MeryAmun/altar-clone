@@ -1,7 +1,7 @@
 .navbar {
 
   /* sticky or fixed are fine */
-  /* position: fixed; */
+  /* position: sticky; */
 
   display: flex;
   justify-content: space-between;
@@ -29,7 +29,7 @@
 /* .nav-transparent { background-color:transparent;} */
 
 .navbar__logo {
-  width: 202px;
+  width: 102px;
   height: 65px;
   object-fit: contain;
 }
