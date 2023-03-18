@@ -63,6 +63,7 @@ button {
 }
 
 .home__servicesHeader {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -383,11 +384,20 @@ cursor: pointer;
     .serviceOptions {
         flex-direction: column;
     }
-
+   .home__review{
+    width: 100%;
+   }
+    .home__servicesHeaderText {
+    width: 100%;
+    }
     .home__reviewMessage {
         font-size: 18px;
         padding: 0 30px;
         text-align: center;
+    }
+    .home__reviewText{
+        width: 100%;
+        padding: 1rem;
     }
     .home__casesText{
         width: 100%;
@@ -457,14 +467,16 @@ cursor: pointer;
     .home__services {
         padding-top: 1rem;
         background-color: #F7F9FD;
-        padding-bottom: 1rem;
+        padding: 1rem;
 
     }
 
     .home__servicesHeaderTitle {
         font-size: 43px;
     }
-
+    .home__servicesHeaderText {
+        width: 100%;
+        }
     .home__reviewMessage {
         width: 370px;
         word-wrap: break-word;
