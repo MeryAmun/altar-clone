@@ -4,8 +4,93 @@
 }
 /* ====================================LEVEL ONE===================================== */
 .footer__levelOne{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
 background-color: #21212B;
-height: 1887px;
+height: 1000px;
+padding: 30px 0px;
+}
+.footer__levelOneLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start
+
+}
+.footer__logo{
+width: 100px;
+height: 29px;
+}
+.footer__levelOneLeftText{
+font-size: 30px;
+font-family: Lato;
+color: #FFFFFF;
+width: 170px;
+margin: 20px 0px;
+}
+.footer__levelOneLeftBtn{
+    width: 171px;
+    height: 44px;
+margin: 0px 0px 10px;
+padding: 12px 18px;
+background-color: #0044FF;
+}
+.footer__levelOneLeftBtn a{
+    font-size: 12px;
+    font-family: Lato;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.footer__levelOneRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: flex-start;
+}
+
+.footer__levelOneRightCities{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0px;
+    align-self: flex-start;
+}
+.footer__levelOneRightImg{
+width: 183px;
+height: 108px;
+object-fit: contain;
+}
+.footer__divider{
+
+}
+.footer__divider{
+width: 2px;
+height: 192px;
+background-color: #FFFFFF;
+margin: 0 20px;
+}
+.footer__levelOneRightLocation{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.footer__levelOneRightLocation > h4{
+    color: #FFFFFF;
+    font-size: 28px;
+    font-family: Lato;
+    margin-bottom: 2rem;
+}
+.footer__levelOneRightLocation,  a, strong{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: Lato;
+    font-weight: 400px;
+    line-height: 26px;
 }
 /* ==================================LEVEL TWO======================================== */
 .footer__levelTwo{
@@ -64,14 +149,61 @@ margin: 20px;
 
 /* =============================MEDIA QUERIES\========================= */
 @media (max-width: 568px) {
+    .footer{
+        padding: 20px 0px;
+    }
+    .footer__levelOne{
+        flex-direction: column;
+      align-items: center;
+      height: 1200px;
+        
+    }
+    .footer__levelOneRight{
+       width: 100%;
+    }
+    .footer__levelOneRightCities{
+        flex-direction: column;
+       align-items: center;
+       width: 100%;
+    }
+    .footer__divider{
+        display: none;
+    }
+    .footer__levelOneRightLocation > h4{
+        margin-top: 20px;
+    }
     .footer__levelTwo{
         flex-direction: column;
+        align-items: flex-start;
     }
     .footer__levelThree{
 flex-direction: column;
     }
 }
 @media (max-width: 768px) {
+    .footer{
+        padding: 20px 0px;
+    }
+    .footer__levelOne{
+        flex-direction: column;
+      align-items: center;
+      height: 1200px;
+        
+    }
+    .footer__levelOneRight{
+        width: 100%;
+     }
+     .footer__levelOneRightCities{
+         flex-direction: column;
+        align-items: center;
+        width: 100%;
+     }
+     .footer__divider{
+         display: none;
+     }
+     .footer__levelOneRightLocation > h4{
+        margin-top: 20px;
+    }
     .footer__levelTwo{
         flex-direction: column;
     }

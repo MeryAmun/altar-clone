@@ -1,5 +1,6 @@
 import React from 'react';
 import { Slide } from "react-reveal";
+import { Link } from "react-router-dom";
 import { NewsCard } from '../../cards';
 import { newsData } from '../../staticData/staticData';
 import './news.css'
@@ -23,6 +24,9 @@ const News = () => {
     ))
 }
 </div>
+<button className="news__btn">
+        <Link to="/all-news">SEE ALL NEWS</Link>
+      </button>
 </div>
   )
 }
