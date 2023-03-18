@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
         <div className="footer__levelOneRight">
           <div className="footer__levelOneRightCities">
-            <img src={lisbon} alt={lisbon} className="footer__levelOneRightImg" />
+            <img src={lisbon} alt={lisbon} className="" width='203px' height='108px'/>
             <div className="footer__divider"></div>
             <div className="footer__levelOneRightLocation">
               <h4>
@@ -30,8 +30,9 @@ const Footer = () => {
               <p>
                 <span>
                   <strong>
-                    Address: Rua Adriano Correia de <br /> Oliveira 4A, 1600-312
-                  </strong>{" "}
+                    Address:
+                  </strong>
+                  Rua Adriano Correia de <br />  Oliveira 4A, 1600-312
                   <br />
                   <strong>
                     Phone: <a href="tel: +351 963630105">+351 963630105</a>
@@ -56,8 +57,9 @@ const Footer = () => {
               <p>
                 <span>
                   <strong>
-                    Address:36 Wharf Road, N1 7GR
-                  </strong>{" "}
+                    Address:
+                  </strong>
+                  36 Wharf Road, N1 <br /> 7GR
                   <br />
                   <strong>
                     Phone: <a href="+44 7802685611">+44 7802685611</a>
@@ -82,8 +84,9 @@ const Footer = () => {
               <p>
                 <span>
                   <strong>
-                    Address: Via orti 14, 20122
-                  </strong>{" "}
+                    Address: 
+                  </strong>
+                  Via orti 14, 20122
                   <br />
                   <strong>
                     Phone: <a href="tel: +39 3318853562">+39 3318853562</a>
@@ -101,7 +104,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__levelTwo">
-        <div className="footer__levelTwoFirst">
+        <div className="footer__levelTwoLinksBox">
           <h4 className="footer__linksGroup">GLOBAL</h4>
           <div className="footer__links">
             <Link to="/work" className="footer__link">
@@ -124,7 +127,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="footer__levelTwoSecond">
+        <div className="footer__levelTwoLinksBox">
           <h4 className="footer__linksGroup">TECHNOLOGY</h4>
           <div className="footer__links">
             <Link to="/full-stack-pps" className="footer__link">
@@ -141,7 +144,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="footer__levelTwoThird">
+        <div className="footer__levelTwoLinksBox">
           <h4 className="footer__linksGroup">SERVICES</h4>
           <div className="footer__links">
             <Link to="/product-scope" className="footer__link">
@@ -158,7 +161,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="footer__levelTwoFourth">
+        <div className="footer__levelTwoLinksBox">
           <h4 className="footer__linksGroup">BUILD</h4>
           <div className="footer__links">
             <Link to="/pricing" className="footer__link">

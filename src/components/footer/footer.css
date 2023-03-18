@@ -27,7 +27,7 @@ font-size: 30px;
 font-family: Lato;
 color: #FFFFFF;
 width: 170px;
-margin: 20px 0px;
+margin: 30px 0px;
 }
 .footer__levelOneLeftBtn{
     width: 171px;
@@ -68,7 +68,7 @@ object-fit: contain;
 
 }
 .footer__divider{
-width: 2px;
+width: 1px;
 height: 192px;
 background-color: #FFFFFF;
 margin: 0 20px;
@@ -85,11 +85,17 @@ justify-content: space-between;
     font-family: Lato;
     margin-bottom: 2rem;
 }
-.footer__levelOneRightLocation,  a, strong{
+.footer__levelOneRightLocation, strong{
     color: #FFFFFF;
     font-size: 16px;
     font-family: Lato;
     font-weight: 400px;
+    line-height: 26px;
+}
+.footer__levelOneRightLocation, a{
+    font-size: 14px;
+    font-family: Lato;
+    color: #8C8C8C;
     line-height: 26px;
 }
 /* ==================================LEVEL TWO======================================== */
@@ -97,15 +103,20 @@ justify-content: space-between;
     padding: 20px;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-background-color: #252525;
-height: 40%;
+    align-items: first center;
+background-color: #1e1d26;
+height: 50%;
+}
+.footer__levelTwoLinksBox{
+    padding: 20px 10px;
+    height: 60%;
 }
 .footer__linksGroup{
     margin: 0px 0px 20px;
     color: #FFFFFF;
     font-size: 14px;
     font-family: Lato;
+    top: 0;
 }
 .footer__links{
    display: flex;
@@ -155,7 +166,7 @@ margin: 20px;
     .footer__levelOne{
         flex-direction: column;
       align-items: center;
-      height: 1200px;
+      height: 1300px;
         
     }
     .footer__levelOneRight{
@@ -188,7 +199,7 @@ flex-direction: column;
     .footer__levelOne{
         flex-direction: column;
       align-items: center;
-      height: 1200px;
+      height: 1300px;
         
     }
     .footer__levelOneRight{

@@ -8,13 +8,13 @@
     box-shadow: 0 8px 10px 4px lightgray;
 
     width: 350px;
-    height: 440px;
+    height: 450px;
     margin: 10px 20px;
 }
 
 .newsCard > hr {
     width: 80px;
-    height: 7px;
+    height: 9px;
     margin: 20px 0;
     background-color: #0044FF;
 }

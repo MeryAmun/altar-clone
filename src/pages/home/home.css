@@ -220,6 +220,17 @@ align-items: center;
     height: 350px;
     align-self: flex-end;
 }
+.home__casesBodyRight h3 h6{
+    padding: 0 30px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 3rem;
+    width: 600px;
+    height: 350px;
+    align-self: flex-end;
+}
 .home__caseStudyImg{
     width: 400px;
     border-radius: 10px;

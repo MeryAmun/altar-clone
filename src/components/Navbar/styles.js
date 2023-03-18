@@ -10,7 +10,7 @@ display:flex;
 flex-direction:column;
 justify-content:space-between;
 align-items:flex-start;
-width: 400px;
+width: 80%;
 z-index: 16;
 list-style: none;
 padding: 0px 40px;

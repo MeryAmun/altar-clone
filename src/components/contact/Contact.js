@@ -49,7 +49,7 @@ const Contact = () => {
         </div>
         <div className="contact__quickServices">
             <IoIosArrowForward className="contact__quickServiceIcon"/>
-            <p className="contact__quickService">You'll be talking to product and tech experts (no account managers).</p>
+            <p className="contact__quickService">You'll be talking to product and tech experts.</p>
         </div>
       </div>
       <div className="contact__right">
