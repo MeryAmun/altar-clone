@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { logo, logoNew } from "../../assets";
+import { logoNew } from "../../assets";
 import { Link } from "react-router-dom";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
@@ -30,6 +30,9 @@ const Navbar = () => {
       <Link to="/">
         <img src={logoNew} alt="" className="navbar__logo" />
       </Link>
+      {/* <Link to="/">
+        <img src={logo} alt="" className="navbar__logo" />
+      </Link> */}
       <div className="navbar__links">
         <div className="navbar__link">
           <Link to="/work">Work</Link>
