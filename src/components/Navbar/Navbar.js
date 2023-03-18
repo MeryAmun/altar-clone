@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { logo } from "../../assets";
+import { logo, logoNew } from "../../assets";
 import { Link } from "react-router-dom";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <div className="navbar nav-colored">
       <Link to="/">
-        <img src={logo} alt="" className="navbar__logo" />
+        <img src={logoNew} alt="" className="navbar__logo" />
       </Link>
       <div className="navbar__links">
         <div className="navbar__link">

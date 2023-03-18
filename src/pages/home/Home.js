@@ -113,10 +113,10 @@ const Home = () => {
             {/* <ImageComponent /> */}
             <img src="https://images.pexels.com/photos/2603464/pexels-photo-2603464.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className="home__caseStudyImg" />
           <div className="home__casesBodyRight">
-            <h6>
+            <h6 className="home__caseTitle">
               <strong>FINTECH</strong>
             </h6>
-            <h3>
+            <h3 className="home__caseSubTitle">
               <strong>REIC</strong>
             </h3>
             <p className="home__casesBodyRightText">
@@ -133,10 +133,10 @@ const Home = () => {
         </div>
         <div className="home__casesBody">
         <div className="home__casesBodyRight">
-          <h6>
+          <h6 className="home__caseTitle">
             <strong>MUSICTECH</strong>
           </h6>
-          <h3>
+          <h3 className="home__caseSubTitle">
             <strong>Audio Test Kitchen</strong>
           </h3>
           <p className="home__casesBodyRightText">

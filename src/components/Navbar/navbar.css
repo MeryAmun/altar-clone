@@ -29,8 +29,8 @@
 /* .nav-transparent { background-color:transparent;} */
 
 .navbar__logo {
-  width: 102px;
-  height: 30px;
+  width: 202px;
+  height: 80px;
   object-fit: contain;
 }
 
@@ -160,7 +160,6 @@
 }
 .navbar__linkBoxSmall > a{
   margin-bottom: 0px;
-  border: 1px solid yellowgreen;
 }
 
 .navbar__linkIconSmall {
