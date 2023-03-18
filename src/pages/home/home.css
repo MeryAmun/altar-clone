@@ -386,6 +386,8 @@ cursor: pointer;
     }
    .home__review{
     width: 100%;
+    height: 100%;
+    padding: 20px 15px;
    }
     .home__servicesHeaderText {
     width: 100%;
@@ -397,7 +399,14 @@ cursor: pointer;
     }
     .home__reviewText{
         width: 100%;
-        padding: 1rem;
+        margin-top: 10px;
+    }
+    .home__reviewer{
+       font-size: 18px;
+    }
+    .home__reviewClient{
+        height: 20px;
+        margin-top: 10px;
     }
     .home__casesText{
         width: 100%;
@@ -478,14 +487,30 @@ cursor: pointer;
         width: 100%;
         }
     .home__reviewMessage {
-        width: 370px;
+        width: 100%;
         word-wrap: break-word;
         text-align: left;
         padding: 0 30px;
         text-align: center;
 
     }
-
+   
+    .home__review{
+        width: 100%;
+        height: 100%;
+        padding: 20px 15px;
+       }
+    .home__reviewText{
+            width: 100%;
+            margin-top: 10px;
+        }
+        .home__reviewer{
+           font-size: 18px;
+        }
+        .home__reviewClient{
+            height: 20px;
+            margin-top: 10px;
+        }
     .home__servicesHeaderText {
         font-size: 20px;
         padding: 0 25px;
@@ -541,3 +566,20 @@ cursor: pointer;
         margin-left: 10px;
     }
 }
+/* @media (max-width: 900px) {
+    .home__review{
+        width: 100%;
+        height: 100%;
+        padding: 20px 15px;
+       }
+    .home__reviewText{
+            width: 100%;
+            margin-top: 10px;
+         
+        }
+       
+        .home__reviewMessage{
+           width: 100%;
+        }
+       
+} */
