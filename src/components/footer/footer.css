@@ -18,15 +18,12 @@ padding: 30px 0px;
     align-items: flex-start
 
 }
+
 .footer__logo{
-width: 100px;
-height: 80px;
-}
-/* .footer__logo{
     width: 100px;
     height: 29px;
     object-fit: contain;
-    } */
+    }
 .footer__levelOneLeftText{
 font-size: 30px;
 font-family: Lato;

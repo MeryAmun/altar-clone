@@ -32,7 +32,6 @@ const Contact = () => {
       <div className="contact__left">
         <p>This is exactly what will happen after you submit your form:</p>
         <div className="contact__video">
-          {/* <video src='https://www.youtube.com/watch?v=ib43NVgp_x0'></video> */}
           <video loop ref={videoRef} src={review}></video>
           <AiFillPlayCircle
             className="contact__videoIcon"

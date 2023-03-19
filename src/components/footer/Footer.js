@@ -3,7 +3,7 @@ import "./footer.css";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { Link } from "react-router-dom";
-import { lisbon, logoNew, london, milan } from "../../assets";
+import { footerLogo, lisbon,  london, milan } from "../../assets";
 
 const Footer = () => {
   return (
@@ -11,11 +11,8 @@ const Footer = () => {
       <div className="footer__levelOne">
         <div className="footer__levelOneLeft">
         <Link to="/">
-          <img src={logoNew} alt="" className="footer__logo" />
-          </Link>
-        {/* <Link to="/">
           <img src={footerLogo} alt="" className="footer__logo" />
-          </Link> */}
+          </Link>
           <h3 className="footer__levelOneLeftText">
             Want to talk about your project?
           </h3>
