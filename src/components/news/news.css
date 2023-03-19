@@ -37,7 +37,8 @@
     line-height: 36px;
     height: 100%;
 }
-.news__items{
+
+.news__items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -50,11 +51,12 @@
     height: 36px;
     background-color: #F7F9FD;
     border: 1px solid #21212B;
-    margin-top:30px;
+    margin-top: 30px;
     padding: 6px 14px;
-  }
-  .news__btn a{
+}
+
+.news__btn a {
     color: #333333;
     font-size: 12px;
     font-family: Lato;
-  }
+}

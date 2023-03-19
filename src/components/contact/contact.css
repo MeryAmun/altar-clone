@@ -1,6 +1,6 @@
-.contact{
-margin-top: 3rem;
-padding: 0px 30px;
+.contact {
+    margin-top: 3rem;
+    padding: 0px 30px;
 }
 
 
@@ -18,10 +18,10 @@ padding: 0px 30px;
     font-weight: 500;
     text-align: center;
     padding: 10px 0px;
- 
+
 }
 
-.contact__box{
+.contact__box {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,7 +41,7 @@ padding: 0px 30px;
 
 }
 
-.contact__video > video {
+.contact__video>video {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
@@ -51,7 +51,7 @@ padding: 0px 30px;
 
 }
 
-.contact__video > video:hover {
+.contact__video>video:hover {
     transition: transform 0.30s ease-in-out;
     transform: scale(1.010) !important;
 
@@ -71,12 +71,13 @@ padding: 0px 30px;
 }
 
 .contact__left {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: flex-start;
-   padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
 }
+
 /* .contact__left > p{
     text-align: left;
     font-size: 16px;
@@ -84,43 +85,48 @@ padding: 0px 30px;
     margin-bottom: 10px;
     border: 2px solid yellowgreen;
 } */
-.contact__quickServices{
-   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 15px;
-  align-self: flex-start;
+.contact__quickServices {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 15px;
+    align-self: flex-start;
 }
-.contact__quickServiceIcon{
+
+.contact__quickServiceIcon {
     text-align: left;
     font-size: 16px;
     color: #04f;
-    margin:0px 10px;
+    margin: 0px 10px;
 }
-.contact__quickService{
+
+.contact__quickService {
     text-align: left;
     font-size: 16px;
     color: #212121;
 }
-.contact__right{
+
+.contact__right {
     width: 100%;
     padding: 10px 20px;
     align-self: flex-start;
 
 }
- form {
+
+form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin:0px;
+    margin: 0px;
     color: #21212B;
     font-size: 16px;
     font-family: Lato;
- 
+
 }
-textarea{
+
+textarea {
     background-color: #F3F7FB;
     padding: 10px;
     width: 100%;
@@ -130,42 +136,50 @@ textarea{
     border: none;
     outline: #0044FF;
 }
-input ,select{
+
+input,
+select {
     background-color: #F3F7FB;
     padding: 10px;
     width: 100%;
     height: 60px;
-    border-radius: 5px; 
+    border-radius: 5px;
     margin: 10px;
     border: none;
     outline: #0044FF;
 }
-select > option{
+
+select>option {
     background-color: #F3F7FB;
-    padding: 10px; 
+    padding: 10px;
 }
-textarea::placeholder{
-    font-size:18px ; 
+
+textarea::placeholder {
+    font-size: 18px;
 }
-option::after{
+
+option::after {
     color: #21212B;
     font-size: 16px;
     font-family: Lato;
 }
-option{
+
+option {
     color: #21212B;
     font-size: 16px;
     font-family: Lato;
 }
- input::placeholder{
-   font-size:16px ;
+
+input::placeholder {
+    font-size: 16px;
 }
 
 .contact__btn {
-margin-top: 20px;
-align-self: flex-start;
+    margin-top: 20px;
+    align-self: flex-start;
 }
-.contact__btn a{
+
+.contact__btn a {
     color: #F7F9FD;
 }
 
@@ -173,21 +187,24 @@ align-self: flex-start;
 
 
 @media (max-width: 568px) {
-    .contact__box{
-       flex-direction: column;
-       width: 319px;
-       padding: 10px;
+    .contact__box {
+        flex-direction: column;
+        width: 319px;
+        padding: 10px;
     }
+
     .contact__video {
         width: 319px;
         height: 178px;
-         margin-top: 15px;
+        margin-top: 15px;
     }
+
     .contact__videoIcon {
         left: 140px;
         bottom: 140px;
-       
+
     }
+
     /* .contact__quickServices{
     
         width: 100%;
@@ -195,19 +212,20 @@ align-self: flex-start;
       margin: 10px;
     } */
     .contact__left {
-      
+
         align-items: center;
-     }
     }
+}
 
 @media (max-width: 768px) {
-    .contact__box{
+    .contact__box {
         flex-direction: column;
-     }
-     .contact__left {
-      
-        align-items: center;
-     }
-     
-    
     }
+
+    .contact__left {
+
+        align-items: center;
+    }
+
+
+}

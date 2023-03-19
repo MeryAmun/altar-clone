@@ -1,4 +1,4 @@
-.newsCard{
+.newsCard {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,20 +12,21 @@
     margin: 10px 20px;
 }
 
-.newsCard > hr {
+.newsCard>hr {
     width: 80px;
     height: 9px;
     margin: 20px 0;
     background-color: #0044FF;
 }
 
-.newsCard__title{
+.newsCard__title {
     width: 274px;
     font-size: 26px;
     color: #21212B;
     font-weight: 500;
 }
-.newsCard__text{
+
+.newsCard__text {
     color: #444;
     font-size: 16px;
     font-weight: 300;
@@ -36,17 +37,18 @@
 
 /* =============================MEDIA QUERIES\========================= */
 @media (max-width: 568px) {
-    .newsCard{
-     
+    .newsCard {
+
         width: 320px;
         height: 100%;
         margin: 5px 15px;
     }
-    }
+}
+
 @media (max-width: 768px) {
-    .newsCard{
+    .newsCard {
         width: 320px;
         height: 100%;
         margin: 5px 15px;
     }
-    }
+}

@@ -38,6 +38,7 @@
   height: 30px;
   object-fit: contain;
 }
+
 .navbar__links {
   display: flex;
   justify-content: space-between;
@@ -135,7 +136,7 @@
 
 .navbar__linkSmall {
   width: 100%;
-  margin:  5px 0 5px;
+  margin: 5px 0 5px;
 
 }
 
@@ -162,7 +163,8 @@
   /* width: 100%; */
   margin-bottom: 0;
 }
-.navbar__linkBoxSmall > a{
+
+.navbar__linkBoxSmall>a {
   margin-bottom: 0px;
 }
 
@@ -171,7 +173,7 @@
   margin-left: 10rem;
   margin-top: -1.6rem;
   align-self: flex-start;
- 
+
 }
 
 .navbar__linkSmall:hover::after {
@@ -250,7 +252,7 @@
     display: none;
   }
 
-  .navbar__links >.navbar__linksMenuIcon {
+  .navbar__links>.navbar__linksMenuIcon {
     display: block;
   }
 

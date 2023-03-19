@@ -3,15 +3,15 @@ import "./footer.css";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { Link } from "react-router-dom";
-import { footerLogo, lisbon,  london, milan } from "../../assets";
+import { footerLogo, lisbon, london, milan } from "../../assets";
 
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer__levelOne">
         <div className="footer__levelOneLeft">
-        <Link to="/">
-          <img src={footerLogo} alt="" className="footer__logo" />
+          <Link to="/">
+            <img src={footerLogo} alt="" className="footer__logo" />
           </Link>
           <h3 className="footer__levelOneLeftText">
             Want to talk about your project?
@@ -23,7 +23,13 @@ const Footer = () => {
         </div>
         <div className="footer__levelOneRight">
           <div className="footer__levelOneRightCities">
-            <img src={lisbon} alt={lisbon} className="" width='203px' height='108px'/>
+            <img
+              src={lisbon}
+              alt={lisbon}
+              className=""
+              width="203px"
+              height="108px"
+            />
             <div className="footer__divider"></div>
             <div className="footer__levelOneRightLocation">
               <h4>
@@ -31,10 +37,8 @@ const Footer = () => {
               </h4>
               <p>
                 <span>
-                  <strong>
-                    Address:
-                  </strong>
-                  Rua Adriano Correia de <br />  Oliveira 4A, 1600-312
+                  <strong>Address:</strong>
+                  Rua Adriano Correia de <br /> Oliveira 4A, 1600-312
                   <br />
                   <strong>
                     Phone: <a href="tel: +351 963630105">+351 963630105</a>
@@ -50,17 +54,19 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer__levelOneRightCities">
-            <img src={london} alt={london} className="footer__levelOneRightImg" />
-            <div className="footer__divider" ></div>
+            <img
+              src={london}
+              alt={london}
+              className="footer__levelOneRightImg"
+            />
+            <div className="footer__divider"></div>
             <div className="footer__levelOneRightLocation">
               <h4>
                 <strong>LONDON</strong>
               </h4>
               <p>
                 <span>
-                  <strong>
-                    Address:
-                  </strong>
+                  <strong>Address:</strong>
                   36 Wharf Road, N1 <br /> 7GR
                   <br />
                   <strong>
@@ -78,16 +84,14 @@ const Footer = () => {
           </div>
           <div className="footer__levelOneRightCities">
             <img src={milan} alt={milan} className="footer__levelOneRightImg" />
-            <div className="footer__divider" ></div>
+            <div className="footer__divider"></div>
             <div className="footer__levelOneRightLocation">
               <h4>
                 <strong>MILAN</strong>
               </h4>
               <p>
                 <span>
-                  <strong>
-                    Address: 
-                  </strong>
+                  <strong>Address:</strong>
                   Via orti 14, 20122
                   <br />
                   <strong>

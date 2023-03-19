@@ -4,7 +4,12 @@ import { hero, review, reviewLogo } from "../../assets";
 import { FaQuoteLeft } from "react-icons/fa";
 import { Slide, Zoom, Reveal } from "react-reveal";
 import "./home.css";
-import { awards, clients, serviceOptions, team } from "../../staticData/staticData";
+import {
+  awards,
+  clients,
+  serviceOptions,
+  team,
+} from "../../staticData/staticData";
 import { ServiceOptionCard } from "../../cards";
 import { AiFillPlayCircle } from "react-icons/ai";
 import { Contact, News, OpenSource } from "../../components";
@@ -47,9 +52,9 @@ const Home = () => {
           <div className="home__servicesHeader">
             <h2 className="home__servicesHeaderTitle">Services</h2>
             <p className="home__servicesHeaderText">
-              We can help you bring your product to life -  whether it's a
-              Minimum Viable Product, UX/UI  Services or help to scale
-              your company.
+              We can help you bring your product to life - whether it's a
+              Minimum Viable Product, UX/UI Services or help to scale your
+              company.
             </p>
           </div>
         </Slide>
@@ -104,14 +109,17 @@ const Home = () => {
           <Slide bottom>
             <h3 className="home__casesText">
               We are proud to work with truly innovative clients. Here are just
-              a few of the companies
-               we’ve had the privilege to work with.
+              a few of the companies we’ve had the privilege to work with.
             </h3>
           </Slide>
         </div>
         <div className="home__casesBody">
-            {/* <ImageComponent /> */}
-            <img src="https://images.pexels.com/photos/2603464/pexels-photo-2603464.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className="home__caseStudyImg" />
+          {/* <ImageComponent /> */}
+          <img
+            src="https://images.pexels.com/photos/2603464/pexels-photo-2603464.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt=""
+            className="home__caseStudyImg"
+          />
           <div className="home__casesBodyRight">
             <h6 className="home__caseTitle">
               <strong>FINTECH</strong>
@@ -132,28 +140,32 @@ const Home = () => {
           </div>
         </div>
         <div className="home__casesBody">
-        <div className="home__casesBodyRight">
-          <h6 className="home__caseTitle">
-            <strong>MUSICTECH</strong>
-          </h6>
-          <h3 className="home__caseSubTitle">
-            <strong>Audio Test Kitchen</strong>
-          </h3>
-          <p className="home__casesBodyRightText">
-            ATK is the world’s first platform to compare professional audio gear
-            in a fully immersive, interactive and unbiased way. With Audio Test
-            Kitchen, audio engineers and record producers can skip the hype and
-            directly compare the sound of different audio gear.
-          </p>
-          <button className="home__casesBodyRightBtn">
-            <Link to="/case-study">SEE CASES STUDY</Link>
-          </button>
-        </div>
+          <div className="home__casesBodyRight">
+            <h6 className="home__caseTitle">
+              <strong>MUSICTECH</strong>
+            </h6>
+            <h3 className="home__caseSubTitle">
+              <strong>Audio Test Kitchen</strong>
+            </h3>
+            <p className="home__casesBodyRightText">
+              ATK is the world’s first platform to compare professional audio
+              gear in a fully immersive, interactive and unbiased way. With
+              Audio Test Kitchen, audio engineers and record producers can skip
+              the hype and directly compare the sound of different audio gear.
+            </p>
+            <button className="home__casesBodyRightBtn">
+              <Link to="/case-study">SEE CASES STUDY</Link>
+            </button>
+          </div>
           {/* <ImageComponent /> */}
-          <img src="https://images.pexels.com/photos/2603464/pexels-photo-2603464.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className="home__caseStudyImg" />
+          <img
+            src="https://images.pexels.com/photos/2603464/pexels-photo-2603464.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt=""
+            className="home__caseStudyImg"
+          />
+        </div>
       </div>
-      </div>
-      
+
       <div className="home__team">
         {team?.map(({ image, title, text, link }, index) => (
           <div className="home__teamMember" key={index}>
@@ -191,31 +203,26 @@ const Home = () => {
           ))}
         </div>
       </div>
-     <OpenSource/>
+      <OpenSource />
       <div className="home__services">
         <Slide bottom>
           <div className="home__servicesHeader">
             <h2 className="home__servicesHeaderTitle">Clients</h2>
             <p className="home__servicesHeaderText">
-            Great Companies make us grow every day.
+              Great Companies make us grow every day.
             </p>
           </div>
         </Slide>
         <div className="home__awards">
           {clients?.map((client, index) => (
             <Zoom bottom key={index}>
-              <img
-                src={client}
-                alt={client}
-                className="home__award"
-                
-              />
+              <img src={client} alt={client} className="home__award" />
             </Zoom>
           ))}
         </div>
       </div>
-      <News/>
-      <Contact/>
+      <News />
+      <Contact />
     </div>
   );
 };

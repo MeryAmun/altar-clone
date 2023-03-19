@@ -18,34 +18,34 @@ const OpenSource = () => {
       </Slide>
       <div className="openSource__items">
         {/* first */}
-          <div className="openSource__openSourceOne">
-            <div className="openSource__openSourceItemOne">
-              <img src={loopBack} alt="" />
-            </div>
-            <div className="openSource__openSourceItemTwo">Loop back</div>
+        <div className="openSource__openSourceOne">
+          <div className="openSource__openSourceItemOne">
+            <img src={loopBack} alt="" />
           </div>
-        {/* second */}
-          <div className="openSource__openSourceOne">
-            <div className="openSource__openSourceItemOne">
-              <img src={angulartics} alt="" />
-            </div>
-            <div className="openSource__openSourceItemTwo">Angular Ticks</div>
-          </div>
-        {/* third */}
-          <div className="openSource__openSourceOne">
-            <div className="openSource__openSourceItemOne">
-              <img src={builder} alt="" />
-            </div>
-            <div className="openSource__openSourceItemTwo">Builder</div>
-          </div>
-          {/* fourth */}
-          <div className="openSource__openSourceOne">
-            <div className="openSource__openSourceItemOne">
-              <img src={starter} alt="" />
-            </div>
-            <div className="openSource__openSourceItemTwo">Starter</div>
-          </div>
+          <div className="openSource__openSourceItemTwo">Loop back</div>
         </div>
+        {/* second */}
+        <div className="openSource__openSourceOne">
+          <div className="openSource__openSourceItemOne">
+            <img src={angulartics} alt="" />
+          </div>
+          <div className="openSource__openSourceItemTwo">Angular Ticks</div>
+        </div>
+        {/* third */}
+        <div className="openSource__openSourceOne">
+          <div className="openSource__openSourceItemOne">
+            <img src={builder} alt="" />
+          </div>
+          <div className="openSource__openSourceItemTwo">Builder</div>
+        </div>
+        {/* fourth */}
+        <div className="openSource__openSourceOne">
+          <div className="openSource__openSourceItemOne">
+            <img src={starter} alt="" />
+          </div>
+          <div className="openSource__openSourceItemTwo">Starter</div>
+        </div>
+      </div>
       <button className="openSource__BodyRightBtn">
         <Link to="/case-study">SEE ALL OPEN SOURCE</Link>
       </button>
