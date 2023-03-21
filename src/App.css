@@ -32,8 +32,17 @@ only screen and (min-device-pixel-ratio: 1.5){
   font-size: 30px;
   cursor: pointer;
 }
+.app__chatBotIcon{
+  color: #0044FF;
+  position: absolute;
+  bottom: 58px;
+  right:20px;
+  position: fixed;
+  font-size: 70px;
+  cursor: pointer;
+}
 .app__chatIcon:hover{
-  color: #25940ee1;
+  color: #0044FF;
   animation: top-icon-spin 0.15s infinite;
   /* transform: rotate(0deg); */
 
