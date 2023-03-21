@@ -43,22 +43,26 @@ import {
 export const serviceOptions = [
   {
     icon: <SlDiamond fontSize="50px" color="#0044FF" />,
+    link:'/product-scope',
     title: "Product Scope",
     text: `A structured 7-day Process to align your vision with your business goals`,
   },
   {
     icon: <AiFillApple fontSize="50px" color="#0044FF" />,
+    link:'/ui-ux',
     title: "UI/UX",
     text: "Design an engaging product that is easy-to-use, attractive and functional",
   },
 
   {
     icon: <FaRegHandshake fontSize="50px" color="#0044FF" />,
+    link:'/mvp-builder',
     title: "MVP Builder",
     text: `Go to market quickly with a high-quality Minimum Viable Product`,
   },
   {
     icon: <HiOutlineUserGroup fontSize="50px" color="#0044FF" />,
+    link:'/teams',
     title: "Dedicated Teams",
     text: `Build your product with a dedicated team of developers`,
   },

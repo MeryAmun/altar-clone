@@ -60,13 +60,15 @@ const Home = () => {
         </Slide>
         <Slide bottom>
           <div className="home__serviceOptions">
-            {serviceOptions?.map(({ icon, title, text }, index) => (
+            {serviceOptions?.map(({ icon, title,link, text }, index) => (
+              <Link to={link}>
               <ServiceOptionCard
                 key={index}
                 title={title}
                 icon={icon}
                 text={text}
               />
+              </Link>
             ))}
           </div>
         </Slide>
